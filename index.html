@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>vivek sharma</title>
   <link rel="stylesheet" href="./style.css">
-	 <audio autoplay loop>
-        <source src="song.mp3" type="audio/mpeg">
-    </audio>
-
 </head>
+
 <body>
+
+<h1>Click anywhere to play music 🎵</h1>
+
+<audio id="bg-music" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+  document.getElementById("bg-music").play();
+}, { once: true });
+</script>
+
+</body>
+</html>
 
 
 
